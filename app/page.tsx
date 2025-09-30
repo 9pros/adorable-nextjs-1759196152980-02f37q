@@ -1,19 +1,24 @@
 'use client'
 
 import React from 'react'
+import Header from '@/components/Header'
+import Hero from '@/components/Hero'
+import Services from '@/components/Services'
+import About from '@/components/About'
+import Testimonials from '@/components/Testimonials'
+import Contact from '@/components/Contact'
+import Footer from '@/components/Footer'
 
 export default function HomePage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white flex items-center justify-center">
-      <div className="text-center">
-        <div className="animate-pulse text-6xl font-bold text-blue-600 mb-4">🏆</div>
-        <h1 className="text-4xl font-bold text-gray-800 mb-4">
-          Award-Winning HVAC Website
-        </h1>
-        <p className="text-xl text-gray-600">
-          Building your professional HVAC website...
-        </p>
-      </div>
+    <div className="min-h-screen">
+      <Header />
+      <Hero />
+      <Services />
+      <About />
+      <Testimonials />
+      <Contact />
+      <Footer />
     </div>
   )
 }
